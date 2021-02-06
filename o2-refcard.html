@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ma carte de référence sur les balises HTML</title>
+    <link
+      href="css/o8-style_refcard.css"
+      rel="stylesheet"
+      media="all"
+      type="text/css"
+    />
   </head>
   <br>
     <h1 id="Debut">La structuration de données en HTML</h1>
@@ -12,13 +18,13 @@
 
     <h3>&lt;br/&gt;</h3>
 
-    nous allons découvrir ici quelles balises il<br />
+    <p>nous allons découvrir ici quelles balises il<br />
     faut utiliser pour mettre en forme du texte dans un document HTML. ceci est
     mon premier paragraphe, j'utilise la balise spécialement prévue pour mettre
     en forme ce genre de contenu et automatiquement sauter les lignes adéquates
     en début et en fin de paragraphe. Une balise pratique ! Elle se distingue de
     la balise br par le fait qu'elle ne sert pas à aller à la ligne, mais bien à
-    changer de paragraphe. C'est sémantiquement différent.
+    changer de paragraphe. C'est sémantiquement différent.</p>
 
     <h3>&lt;abbr&gt;</h3>
 
@@ -41,10 +47,10 @@
 
     <h3>&lt;em&gt; &lt;strong&gt; &lt;mark&gt;</h3>
 
-    En <em>HTML5</em>, de nouvelles <strong>balises</strong> sont apparues,
+    <p>En <em>HTML5</em>, de nouvelles <strong>balises</strong> sont apparues,
     comme <mark> mark</mark> par exemple. Elles ne servent qu'à définir la
     sémantique du contenu (mise en valeur, importance, surlignage). L'apparence
-    change par défaut, mais on pourra la modifier en CSS.
+    change par défaut, mais on pourra la modifier en CSS.</p>
 
     <h3>&lt;ol&gt; &lt;li&gt; &lt;ul&gt;</h3>
     <ol>
@@ -75,23 +81,24 @@
     >
 
     <h2>La gestion des liens.</h2>
+    <div class = "anchor">
     <h3>anchor same page</h3>
     <a href="#Debut">Retour au début</a><br/>
-
-    <h3>other page</h3>
-    <a href="index.html">Redécouvrez ma première page !</a><br/>
-
-    <h3>url</h3>
-    <a href="https://validator.w3.org/">Accès au W3C validator</a>
-
-    <h3>mail</h3>
-    <a href="mailto:b.garo44@gmail.com?Subject=mail_via_HTML">envoyez moi un mail !</a>
     
-    <h3>anchor</h3>
-    <a href="niveau_2/o3-test_liens.html#ancre_test">Lien vers une ancre dans une page d'un sous dossier</a>
+    <h3>other page</h3>
+    <a href="index.html">Redécouvrez ma première page !</a><br/></div>
+    <div id = "url">
+    <h3>url</h3>
+    <a href="https://validator.w3.org/">Accès au W3C validator</a></div>
 
-    <h3>zip</h3>
-    <a href="niveau_2/04-test_archive.zip.zip">Testez ce lien ! Magique !</a>
+    <div class = "quatre"><h3>mail</h3>
+    <a href="mailto:b.garo44@gmail.com?Subject=mail_via_HTML">envoyez moi un mail !</a>
+    </div>  
+    <div id = "anchor_id"><h3>anchor</h3>
+    <a href="niveau_2/o3-test_liens.html#ancre_test">Lien vers une ancre dans une page d'un sous dossier</a></div>
+
+    <div class = "quatre"><h3>zip</h3>
+    <a href="niveau_2/04-test_archive.zip.zip">Testez ce lien ! Magique !</a></div>
 
     <h2>images</h2>
     <img src="images/insa_logo.png" alt = "insa cvl logo">
